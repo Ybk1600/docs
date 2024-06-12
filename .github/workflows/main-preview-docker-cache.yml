@@ -35,7 +35,7 @@ jobs:
           creds: ${{ secrets.NONPROD_AZURE_CREDENTIALS }}
 
       - name: 'Docker login'
-        uses: azure/docker-login@f3bf641aefa4add3a0667e94dbbcb96374bba2fa
+        uses: azure/docker-login@8081e8d61ff42fa6ffc818389e3e0003dc253ab5
         with:
           login-server: ${{ secrets.NONPROD_REGISTRY_SERVER }}
           username: ${{ env.NONPROD_REGISTRY_USERNAME }}
